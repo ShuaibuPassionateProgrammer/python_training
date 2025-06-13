@@ -1,6 +1,20 @@
 ussd = input("Please dial a USSD code: ")
 
 if ussd == "*406#":
-    print("We can now proceed")
+    print("1. Join Pulse")
+    print("2. 1.2GB+1hr(YT/IG/TT) @N750")
+    print("3. Nightlife Bundles")
+    print("4. IG/Tiktok/Youtube Bundles")
+    print("5. Goodybag")
+    print("6. 750MB @N450")
+    print("7. Pulse Points")
+    print("8. Campus Zone")
+    choice = input("")
+
+    if choice == "1":
+        print("Dear Customer, you will lose all your Pulse Points if you migrate out of the plan. do you wish to proceed?")
+        print("1. Proceed")
+        print("2. Cancel")
+        print("\n0.Back")
 else:
     print("Invalid USSD code")
