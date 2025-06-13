@@ -20,5 +20,12 @@ if ussd == "*406#":
         print("1. Proceed")
         print("2. Cancel")
         print("\n0.Back")
+        choice1 = input("")
+
+        if choice1 == "1":
+            os.system("cls")
+            print("Dear Customer, you are welcome to mtn pulse. You can now enjoy calls @11KB per seconds, also you can use Night Bundle feature starting from (11:00PM - 06:00AM). Thank you")
+
 else:
+    os.system("cls")
     print("Invalid USSD code")
