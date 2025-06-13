@@ -1,6 +1,9 @@
+import os
+
 ussd = input("Please dial a USSD code: ")
 
 if ussd == "*406#":
+    os.system("cls")
     print("1. Join Pulse")
     print("2. 1.2GB+1hr(YT/IG/TT) @N750")
     print("3. Nightlife Bundles")
@@ -12,6 +15,7 @@ if ussd == "*406#":
     choice = input("")
 
     if choice == "1":
+        os.system("cls")
         print("Dear Customer, you will lose all your Pulse Points if you migrate out of the plan. do you wish to proceed?")
         print("1. Proceed")
         print("2. Cancel")
