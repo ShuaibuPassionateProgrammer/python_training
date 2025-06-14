@@ -29,3 +29,6 @@ if ussd == "*406#":
 else:
     os.system("cls")
     print("Invalid USSD code")
+
+
+    
