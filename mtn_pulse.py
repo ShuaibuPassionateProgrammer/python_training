@@ -3,7 +3,7 @@ import os
 ussd = input("Please dial a USSD code: ")
 
 def clr():
-    os.system("cls", os.name == "nt" else "clear")
+    os.system("cls" if os.name == "nt" else "clear")
 
 if ussd == "*406#":
     clr()
