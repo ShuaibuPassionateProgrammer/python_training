@@ -5,7 +5,7 @@ ussd = input("Please dial a USSD code: ")
 def clr():
     os.system("cls" if os.name == "nt" else "clear")
 
-if ussd == "*406#":
+def main_menu():
     clr()
     print("1. Join Pulse")
     print("2. 1.2GB+1hr(YT/IG/TT) @N750")
@@ -15,6 +15,9 @@ if ussd == "*406#":
     print("6. 750MB @N450")
     print("7. Pulse Points")
     print("8. Campus Zone")
+
+if ussd == "*406#":
+    main_menu():
     choice = input("")
 
     if choice == "1":
