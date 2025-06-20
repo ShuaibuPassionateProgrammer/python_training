@@ -16,32 +16,33 @@ def main_menu():
     print("7. Pulse Points")
     print("8. Campus Zone")
 
-if ussd == "*406#":
-    clr()
-    main_menu()
-    choice = input("")
-
-    if choice == "1":
+while True:
+    if ussd == "*406#":
         clr()
-        print("Dear Customer, you will lose all your Pulse Points if you migrate out of the plan. do you wish to proceed?")
-        print("1. Proceed")
-        print("2. Cancel")
-        print("\n0.Back")
-        choice1 = input("")
+        main_menu()
+        choice = input("")
 
-        if choice1 == "1":
+        if choice == "1":
             clr()
-            print("Dear Customer, you are welcome to mtn pulse. You can now enjoy calls @11KB per seconds, also you can use Night Bundle feature starting from (11:00PM - 06:00AM). Thank you")
-        elif choice1 == "2":
-            clr()
-            sys.exit(0)
-        elif choice1 == "0":
-            clr()
-            main_menu()
+            print("Dear Customer, you will lose all your Pulse Points if you migrate out of the plan. do you wish to proceed?")
+            print("1. Proceed")
+            print("2. Cancel")
+            print("\n0.Back")
+            choice1 = input("")
 
-else:
-    clr()
-    print("Invalid USSD code")
+            if choice1 == "1":
+                clr()
+                print("Dear Customer, you are welcome to mtn pulse. You can now enjoy calls @11KB per seconds, also you can use Night Bundle feature starting from (11:00PM - 06:00AM). Thank you")
+            elif choice1 == "2":
+                clr()
+                sys.exit(0)
+            elif choice1 == "0":
+                clr()
+                main_menu()
+
+        else:
+            clr()
+            print("Invalid USSD code")
 
 
     
