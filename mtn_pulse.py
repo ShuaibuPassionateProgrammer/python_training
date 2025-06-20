@@ -17,7 +17,7 @@ def main_menu():
     print("8. Campus Zone")
 
 if ussd == "*406#":
-    main_menu():
+    main_menu()
     choice = input("")
 
     if choice == "1":
