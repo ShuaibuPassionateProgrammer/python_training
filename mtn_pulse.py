@@ -16,6 +16,12 @@ def main_menu():
     print("7. Pulse Points")
     print("8. Campus Zone")
 
+def join_pulse():
+    print("Dear Customer, you will lose all your Pulse Points if you migrate out of the plan. do you wish to proceed?")
+    print("1. Proceed")
+    print("2. Cancel")
+    print("\n0.Back")
+
 while True:
     if ussd == "*406#":
         clr()
@@ -24,10 +30,7 @@ while True:
 
         if choice == "1":
             clr()
-            print("Dear Customer, you will lose all your Pulse Points if you migrate out of the plan. do you wish to proceed?")
-            print("1. Proceed")
-            print("2. Cancel")
-            print("\n0.Back")
+            join_pulse()
             choice1 = input("")
 
             if choice1 == "1":
