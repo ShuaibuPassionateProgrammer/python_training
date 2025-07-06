@@ -43,9 +43,9 @@ while True:
                 clr()
                 main_menu()
 
-        else:
-            clr()
-            print("Invalid USSD code")
+    else:
+        clr()
+        print("Invalid USSD code")
 
 
     
