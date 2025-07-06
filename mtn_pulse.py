@@ -46,6 +46,7 @@ while True:
     else:
         clr()
         print("Invalid USSD code")
+        break
 
 
     
